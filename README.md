@@ -15,7 +15,7 @@ There's no "Best practices" to do this right now, So I've ended up creating my o
 
 or
 
-`yarn install graphql-authorize-subscription`
+`yarn add graphql-authorize-subscription`
 
 ## Usage Examples
 
