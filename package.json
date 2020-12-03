@@ -14,6 +14,15 @@
   ],
   "author": "Lee Eungyu <scriptersugar@gmail.com> (https://mirage.works)",
   "license": "MIT",
+  "homepage": "https://github.com/ScripterSugar/graphql-authorize-subscription",
+  "repository": {
+    "url": "https://github.com/ScripterSugar/graphql-authorize-subscription",
+    "type": "github"
+  },
+  "bugs": {
+    "email": "scriptersugar@gmail.com",
+    "url": "https://github.com/ScripterSugar/graphql-authorize-subscription"
+  },
   "dependencies": {
   },
   "devDependencies": {
