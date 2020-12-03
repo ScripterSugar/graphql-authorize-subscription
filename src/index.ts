@@ -10,14 +10,14 @@ export const withAuthorization = (asyncIterableResolver: ResolverFn, authorize: 
 
     asyncIterable.next = async () => { // eslint-disable-line
       if (this.__isAuthorized) {
-        return originNext();
+        return originNext.bind(asyncIterable)();
       }
 
       await authorize(...resolverArgs);
 
       this.__isAuthorized = true;
 
-      return originNext();
+      return originNext.bind(asyncIterable)();
     };
 
     return asyncIterable;
