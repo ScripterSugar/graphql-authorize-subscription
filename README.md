@@ -1,5 +1,12 @@
 # graphql-authorize-subscription
-A simple helper function for authorize subscription with apollo-server
+A simple and light-weighted (0 dependency) helper function for authorize subscription with apollo-server
+
+
+## Why you want to use this?
+
+As of today (2020/12/04) the apollo server doesn't provides any feature to authorize graphQL subscription in resolver level. You can authenticate the users over connection level (with onConnection options) but production-grade projects usually have numerous authorizing contexts over subscription resolvers, and it's messy and hard to handle all of this authorizations within onConnection handler only.
+
+There's no "Best practices" to do this right now, So I've ended up creating my own capsulized component to handle these resolver-level authorization for subscriptions.
 
 
 ## Installation
@@ -8,7 +15,7 @@ A simple helper function for authorize subscription with apollo-server
 
 or
 
-`yarn install graphql-authorize-subscription`
+`yarn add graphql-authorize-subscription`
 
 ## Usage Examples
 
