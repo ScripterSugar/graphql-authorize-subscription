@@ -1,6 +1,6 @@
 {
   "name": "graphql-authorize-subscription",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple higher order helper function to authorize subscription with apollo-server",
   "main": "lib/index.js",
   "scripts": {
@@ -23,8 +23,7 @@
     "email": "scriptersugar@gmail.com",
     "url": "https://github.com/ScripterSugar/graphql-authorize-subscription"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.10.5",
