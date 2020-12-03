@@ -1,0 +1,10 @@
+# Dependencies
+node_modules
+
+# Release builds
+lib
+
+# Others
+
+package-error.log
+yarn-error.log
