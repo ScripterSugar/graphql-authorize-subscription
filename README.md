@@ -1,5 +1,5 @@
 # graphql-authorize-subscription
-A simple helper function for authorize subscription with apollo-server
+A simple and light-weighted (ZERO dependency) helper function for authorize subscription with apollo-server
 
 
 ## Why you want to use this?
