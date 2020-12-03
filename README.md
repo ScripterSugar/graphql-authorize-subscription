@@ -34,7 +34,7 @@ if you throw errors in `authorizationResolver`, the socket connection closes imm
 import { withFilter } from 'graphql-subscriptions';
 import { withAuthorization } from 'graphql-authorize-subscription';
 
-export const notificationResolvers = {
+export const authorizedResolvers = {
   Subscription: {
     authorizedSubscription: {
       subscribe: withAuthorization(
@@ -61,7 +61,7 @@ export const notificationResolvers = {
 import { withFilter } from 'graphql-subscriptions';
 import { withAuthorization } from 'graphql-authorize-subscription';
 
-export const notificationResolvers = {
+export const authorizedResolvers = {
   Subscription: {
     authorizedSubscription: {
       subscribe: withAuthorization(
