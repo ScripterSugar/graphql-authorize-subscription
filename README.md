@@ -33,6 +33,7 @@ if you throw errors in `authorizationResolver`, the socket connection closes imm
 ```javascript
 import { withFilter } from 'graphql-subscriptions';
 import { withAuthorization } from 'graphql-authorize-subscription';
+// import withAuthorization from 'graphql-authorize-subscription'; You can use the default export too.
 
 export const authorizedResolvers = {
   Subscription: {
