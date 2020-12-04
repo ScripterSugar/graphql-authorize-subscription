@@ -110,6 +110,11 @@ export const authorizedResolvers = {
           
           if (isTaskNotStarted(taskId)) {
             await startTask(taskId) // start the task first.
+            
+            // Maybe you want to just let the task start asynchronously, or even in next tick.
+            // If the task resolves as done within synchronous level, the task done event will not sent to the subscriber as it resolves before the pubsub subscription made.
+            
+            process.nextTick(() => startTask(taskId));
           }
 
           return true;
