@@ -88,7 +88,7 @@ export const authorizedResolvers = {
 
 ```
 
-## Usage as pre processor
+### Usage as pre processor
 
 
 ```javascript
