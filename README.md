@@ -107,6 +107,10 @@ export const authorizedResolvers = {
           if (isTaskDoneAlready(taskId)) {
             throw new Error('ERR_TASK_FINISHED'); // In your front-end code mark the task as finished.
           }
+          
+          if (isTaskNotStarted(taskId)) {
+            await startTask(taskId) // start the task first.
+          }
 
           return true;
         }),
